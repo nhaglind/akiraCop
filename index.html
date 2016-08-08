@@ -123,6 +123,9 @@ function draw() {
     if(x > paddleX && x < paddleX + paddleWidth) {
       dy = -dy;
       }
+      else {
+        document.location.reload();
+      }
   }
 
   if(rightPressed && paddleX < canvas.width-paddleWidth) {
